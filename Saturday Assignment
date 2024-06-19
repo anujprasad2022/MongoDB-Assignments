@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+import java.util.List;
+import org.bson.Document;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.FindIterable;
+import com.mongodb.client.model.Filters;
+import com.mongodb.client.model.Sorts;
+public class add {
+public static void main(String[] args) {
+MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
+MongoDatabase database = mongoClient.getDatabase("myDb");
+MongoCollection<Document> collection = database.getCollection("employee");
+collection.drop();
+List<Document> employees = new ArrayList<>();
+employees.add(new Document("name", "John")
+.append("salary", 15000)
+.append("age", 28));
+employees.add(new Document("name", "Alice")
+.append("salary", 35000)
+.append("age", 32));
+employees.add(new Document("name", "Bob")
+.append("salary", 20000)
+.append("age", 29));
+employees.add(new Document("name", "Carol")
+.append("salary", 18000)
+.append("age", 38));
+employees.add(new Document("name", "David")
+.append("salary", 12000)
+.append("age", 42));
+employees.add(new Document("name", "Eva")
+.append("salary", 40000)
+.append("age", 36));
+collection.insertMany(employees);
+System.out.println("Employees inserted.");
+// Query for employees with age between 30 and 40, sorted by salary ascending, and limit to one result
+Document query = new Document("age", new Document("$gte", 30).append("$lte", 40));
+FindIterable<Document> lowSalaryEmployee = collection.find(query)
+.sort(Sorts.ascending("salary"))
+.limit(1);
+System.out.println("Employee aged between 30 and 40 with the lowest salary:");
+for (Document emp : lowSalaryEmployee) {
+String name = emp.getString("name");
+Integer salary = emp.getInteger("salary");
+Integer age = emp.getInteger("age");
+System.out.println("Name: " + name + ", Salary: " + salary + ", Age: " + age);
+}
+}
+}
