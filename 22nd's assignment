@@ -641,3 +641,449 @@ System.out.println("Name: " + name + ", Salary: " + salary + ", Age: " + age);
 }
 }
 }
+
+
+[{
+  "_id": 1,
+  "content": "This morning I had a cup of coffee.",
+  "about": {
+    "author": "Jayanth",
+    "writer": "Jayanth Vellingiri"
+  },
+  "keywords": [
+    "coffee"
+  ]
+},
+{
+  "_id": 2,
+  "content": "Who likes chocolate ice cream for dessert?",
+  "about": {
+    "author": "Karthik",
+    "writer": "Karthik Raj"
+  },
+  "keywords": [
+    "poll"
+  ]
+},
+{
+  "_id": 3,
+  "content": "My favorite flavors are strawberry and coffee",
+  "about": {
+    "author": "Praveen",
+    "writer": "praveen kumar"
+  },
+  "keywords": [
+    "food",
+    "dessert"
+  ]
+}]
+
+[{
+  "_id": 1,
+  "name": "xPhone",
+  "price": 799,
+  "releaseDate": {
+    "$date": "2011-05-14T00:00:00.000Z"
+  },
+  "spec": {
+    "ram": 4,
+    "screen": 6.5,
+    "cpu": 2.66
+  },
+  "color": [
+    "white",
+    "black"
+  ],
+  "storage": [
+    64,
+    128,
+    256
+  ]
+},
+{
+  "_id": 2,
+  "name": "xTablet",
+  "price": 899,
+  "releaseDate": {
+    "$date": "2011-09-01T00:00:00.000Z"
+  },
+  "spec": {
+    "ram": 16,
+    "screen": 9.5,
+    "cpu": 3.66
+  },
+  "color": [
+    "white",
+    "black",
+    "purple"
+  ],
+  "storage": [
+    128,
+    256,
+    512
+  ]
+},
+{
+  "_id": 3,
+  "name": "SmartTablet",
+  "price": 899,
+  "releaseDate": {
+    "$date": "2015-01-14T00:00:00.000Z"
+  },
+  "spec": {
+    "ram": 12,
+    "screen": 9.7,
+    "cpu": 3.66
+  },
+  "color": [
+    "blue"
+  ],
+  "storage": [
+    16,
+    64,
+    128
+  ]
+},
+{
+  "_id": 4,
+  "name": "SmartPad",
+  "price": 699,
+  "releaseDate": {
+    "$date": "2020-05-14T00:00:00.000Z"
+  },
+  "spec": {
+    "ram": 8,
+    "screen": 9.7,
+    "cpu": 1.66
+  },
+  "color": [
+    "white",
+    "orange",
+    "gold",
+    "gray"
+  ],
+  "storage": [
+    128,
+    256,
+    1024
+  ]
+},
+{
+  "_id": 5,
+  "name": "SmartPhone",
+  "price": 599,
+  "releaseDate": {
+    "$date": "2022-09-14T00:00:00.000Z"
+  },
+  "spec": {
+    "ram": 4,
+    "screen": 9.7,
+    "cpu": 1.66
+  },
+  "color": [
+    "white",
+    "orange",
+    "gold",
+    "gray"
+  ],
+  "storage": [
+    128,
+    256
+  ]
+},
+{
+  "_id": 6,
+  "name": "xWidget",
+  "spec": {
+    "ram": 64,
+    "screen": 9.7,
+    "cpu": 3.66
+  },
+  "color": [
+    "black"
+  ],
+  "storage": [
+    1024
+  ]
+},
+{
+  "_id": 7,
+  "name": "xReader",
+  "price": null,
+  "spec": {
+    "ram": 64,
+    "screen": 6.7,
+    "cpu": 3.66
+  },
+  "color": [
+    "black",
+    "white"
+  ],
+  "storage": [
+    128
+  ]
+}]
+
+[{
+  "_id": 1,
+  "name": "xPhone",
+  "price": 799,
+  "releaseDate": {
+    "$date": "2011-05-14T00:00:00.000Z"
+  },
+  "spec": {
+    "ram": 4,
+    "screen": 6.5,
+    "cpu": 2.66
+  },
+  "color": [
+    "white",
+    "black"
+  ],
+  "storage": [
+    64,
+    128,
+    256
+  ]
+},
+{
+  "_id": 2,
+  "name": "xTablet",
+  "price": 899,
+  "releaseDate": {
+    "$date": "2011-09-01T00:00:00.000Z"
+  },
+  "spec": {
+    "ram": 16,
+    "screen": 9.5,
+    "cpu": 3.66
+  },
+  "color": [
+    "white",
+    "black",
+    "purple"
+  ],
+  "storage": [
+    128,
+    256,
+    512
+  ]
+},
+{
+  "_id": 3,
+  "name": "SmartTablet",
+  "price": 899,
+  "releaseDate": {
+    "$date": "2015-01-14T00:00:00.000Z"
+  },
+  "spec": {
+    "ram": 12,
+    "screen": 9.7,
+    "cpu": 3.66
+  },
+  "color": [
+    "blue"
+  ],
+  "storage": [
+    16,
+    64,
+    128
+  ]
+},
+{
+  "_id": 4,
+  "name": "SmartPad",
+  "price": 699,
+  "releaseDate": {
+    "$date": "2020-05-14T00:00:00.000Z"
+  },
+  "spec": {
+    "ram": 8,
+    "screen": 9.7,
+    "cpu": 1.66
+  },
+  "color": [
+    "white",
+    "orange",
+    "gold",
+    "gray"
+  ],
+  "storage": [
+    128,
+    256,
+    1024
+  ]
+},
+{
+  "_id": 5,
+  "name": "SmartPhone",
+  "price": 599,
+  "releaseDate": {
+    "$date": "2022-09-14T00:00:00.000Z"
+  },
+  "spec": {
+    "ram": 4,
+    "screen": 9.7,
+    "cpu": 1.66
+  },
+  "color": [
+    "white",
+    "orange",
+    "gold",
+    "gray"
+  ],
+  "storage": [
+    128,
+    256
+  ]
+},
+{
+  "_id": 6,
+  "name": "xWidget",
+  "spec": {
+    "ram": 64,
+    "screen": 9.7,
+    "cpu": 3.66
+  },
+  "color": [
+    "black"
+  ],
+  "storage": [
+    1024
+  ]
+},
+{
+  "_id": 7,
+  "name": "xReader",
+  "price": null,
+  "spec": {
+    "ram": 64,
+    "screen": 6.7,
+    "cpu": 3.66
+  },
+  "color": [
+    "black",
+    "white"
+  ],
+  "storage": [
+    128
+  ]
+}]
+
+[{
+  "_id": 1,
+  "item": "Americanos",
+  "price": 5,
+  "size": "Short",
+  "quantity": 22,
+  "date": {
+    "$date": "2022-01-15T08:00:00.000Z"
+  }
+},
+{
+  "_id": 2,
+  "item": "Cappuccino",
+  "price": 6,
+  "size": "Short",
+  "quantity": 12,
+  "date": {
+    "$date": "2022-01-16T09:00:00.000Z"
+  }
+},
+{
+  "_id": 3,
+  "item": "Lattes",
+  "price": 15,
+  "size": "Grande",
+  "quantity": 25,
+  "date": {
+    "$date": "2022-01-16T09:05:00.000Z"
+  }
+},
+{
+  "_id": 4,
+  "item": "Mochas",
+  "price": 25,
+  "size": "Tall",
+  "quantity": 11,
+  "date": {
+    "$date": "2022-02-17T08:00:00.000Z"
+  }
+},
+{
+  "_id": 5,
+  "item": "Americanos",
+  "price": 10,
+  "size": "Grande",
+  "quantity": 12,
+  "date": {
+    "$date": "2022-02-18T21:06:00.000Z"
+  }
+},
+{
+  "_id": 6,
+  "item": "Cappuccino",
+  "price": 7,
+  "size": "Tall",
+  "quantity": 20,
+  "date": {
+    "$date": "2022-02-20T10:07:00.000Z"
+  }
+},
+{
+  "_id": 7,
+  "item": "Lattes",
+  "price": 25,
+  "size": "Tall",
+  "quantity": 30,
+  "date": {
+    "$date": "2022-02-21T10:08:00.000Z"
+  }
+},
+{
+  "_id": 8,
+  "item": "Americanos",
+  "price": 10,
+  "size": "Grande",
+  "quantity": 21,
+  "date": {
+    "$date": "2022-02-22T14:09:00.000Z"
+  }
+},
+{
+  "_id": 9,
+  "item": "Cappuccino",
+  "price": 10,
+  "size": "Grande",
+  "quantity": 17,
+  "date": {
+    "$date": "2022-02-23T14:09:00.000Z"
+  }
+},
+{
+  "_id": 10,
+  "item": "Americanos",
+  "price": 8,
+  "size": "Tall",
+  "quantity": 15,
+  "date": {
+    "$date": "2022-02-25T14:09:00.000Z"
+  }
+}]
+
+[{
+  "_id": {
+    "$oid": "667588d15d102db130e5390f"
+  },
+  "address": {
+    "city": "Los Angeles",
+    "state": "California",
+    "pincode": "123"
+  },
+  "tags": [
+    "music",
+    "cricket",
+    "blogs"
+  ],
+  "name": "Tom Benzamin"
+}]
